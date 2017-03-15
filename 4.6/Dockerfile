@@ -24,7 +24,7 @@ RUN set -x \
 	&& gosu nobody true
 
 # grab tini for signal processing and zombie killing
-ENV TINI_VERSION v0.9.0
+ENV TINI_VERSION v0.14.0
 RUN set -x \
 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" \
 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" \
